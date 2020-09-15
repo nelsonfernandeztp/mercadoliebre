@@ -1,0 +1,263 @@
+/* CSS GENERAL*/
+*{
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  background-color: #ebebeb;
+  margin: 0px;
+}
+
+header{
+  height: auto;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+p{
+  text-align: center;
+}
+.fas.fa-search{
+background-color: white;
+}
+
+.buscar{
+display: inline-block;
+border-radius: 5px;
+width: 25px;
+height: 33px;
+margin-left: 0px;
+background-color: white;
+}
+
+main{
+  width: 90%;
+  padding-left: 10px;
+  text-align: center;
+}
+
+section article{
+  display:flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+
+/*.caja-des{
+  display:flex;
+  border-top: 1px solid #ebebeb;
+  flex-wrap: wrap;
+}*/
+footer{
+  display:block;
+  padding: 5% 5%;
+}
+footer article{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+img{
+  width: 90%;
+}
+.logo{
+  width: 50%;
+  display: inline-block;
+}
+.buscar-icon{
+  display: inline-block;
+}
+
+.negrita {
+  font-weight: bold;
+  text-align: center;
+}
+.fondo-amarillo{
+  background-color: #EAC926;
+}
+.boton-menu{
+  text-align: center;
+}
+.fas.fa-bars{
+  width: 40px;
+  height: 40px;
+  background-color: #0044aa;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fas.fa-bars:hover{
+  background-color: #0022AA;
+  cursor: pointer;
+}
+#buscador{
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+/*CSS HOME*/
+
+img.banner{
+  display: block;
+  width: 100% !important;
+} 
+
+.titulares{
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.precios{
+  font-size: 18px;
+}
+.descuentos{
+  font-size: 16px;
+  color: #39b54a;
+}
+.descripciones{
+  font-size: 16px;
+  font-weight: bold;
+  display: none;
+}
+.descripciones1{
+  font-size: 16px;
+  font-weight: bold;
+  display: none;
+}
+.descripcionesProd{
+  font-size: 16px;
+  font-weight: bold;
+}
+main article:hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+
+li{
+  list-style: none;
+  
+}
+ul{
+  padding-left: 0px;
+  margin: 0px;
+  
+}
+.fondo-blanco{
+  background-color: white;
+}
+
+i.fas.fa-truck.fa-2x{
+  color: #39b54a !important;
+}
+
+i.fas.fa-credit-card.fa-2x, i.fas.fa-home.fa-2x, i.fas.fa-user-shield.fa-2x{
+  color: #03264c;
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* css login */
+#login-contrasena, #login-usuario{
+  width: 100%;
+  padding: 10px;
+  margin: 20px 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+#boton-logearse{
+  color: white;
+  background-color: #0044aa;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+#boton-logearse:hover{
+  background-color: #0022aa;
+}
+
+/* css registro*/
+
+.perfil{
+  display: flex;
+}
+.intereses{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+h2{
+  text-align: left;
+}
+
+#registro-nombreCompleto, #registro-usuario, #registro-email, #registro-nacimiento, #registro-domicilio, #perfilOp1, #perfilOp2, #electro, #moda, #hogar, #jugueteria,#vida-sana, #foto, #registro-contrasena, #registro-confirma-contrasena{
+  width: 100%;
+  padding: 10px;
+  margin: 20px 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+#boton-registrarse{
+  color: white;
+  background-color: #0044aa;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+#boton-registrarse:hover{
+  background-color: #0022aa;
+}
+#boton-reset{
+  color: white;
+  background-color: #aa0044;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+#boton-reset:hover{
+  background-color: #cc1155;
+}
+
+@media (min-width: 361px){
+  /*tablet*/
+}
+
+@media (min-width: 769px){
+  .descripciones{
+    display: inline-block;
+  }
+  ul.descripciones1{
+    display: inline-block;
+    text-align: right;
+  }
+  ul li{
+    display: inline-block;
+  }
+  section article{
+    width: 45%;
+  }
+}
