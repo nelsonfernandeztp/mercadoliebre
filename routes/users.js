@@ -7,12 +7,12 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-router.get('/registro', userController.register);
-router.post('/registro', userController.recibirRegister);
+router.get('/register', userController.register);
+router.post('/register', userController.sendRegister);
 
 router.get('/login', userController.login);
-router.post('/login', userController.recibirLogin);
+router.post('/login', userController.sendLogin);
 
-router.get('/perfil', userController.perfil);
+router.get('/profile', userController.profile);
 
 module.exports = router;

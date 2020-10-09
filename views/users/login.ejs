@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadolibre</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body>
+  <%- include("../partials/header") %>
+  <br>
+  <main>
+    <form action="/users/login" method="post">
+      <p><input type="text" placeholder="Nombre de Usuario" id="login-usuario" name="usuario"></p>
+      <p><input type="password" placeholder="Contraseña" id="login-contrasena" name="contrasena"></p>
+      <button type="submit" id="boton-logearse">Enviar</button>
+    </form>
+  </main>
+  <br>
+  <%- include("../partials/footer") %>
+
+</body>
+
+</html>

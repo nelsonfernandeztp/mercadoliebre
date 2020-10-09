@@ -1,20 +1,20 @@
 const userController = {
     register: function(req, res, next) {
-        res.render('registro');
+        res.render('users/register');
       },
-      recibirRegister: function (req,res,next){
+      sendRegister: function (req,res,next){
         var usuario = req.body;
-        res.render("perfil", {usuario: usuario})
+        res.render("users/profile", {usuario: usuario})
       },
       login: function(req, res, next) {
-        res.render('login');
+        res.render('users/login');
       },
-      recibirLogin: function (req,res,next){
+      sendLogin: function (req,res,next){
         var usuario = req.body.usuario;
-        res.render("perfil", {usuario:usuario})
+        res.redirect("users/profile", {usuario:usuario})
       },
-      perfil: function (req,res,next){
-          res.render("perfil");
+      profile: function (req,res,next){
+          res.render("users/profile");
       }
 }
 

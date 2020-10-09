@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("../partials/header") %>
+    <form action="/product/create" method = "post" enctype="multipart/form-data">
+
+        <h2> Creacion de producto</h2>
+        <br>
+        <p><input type = "text" placeholder="Nombre" name= "name"></p>
+        <p><input type = "text" placeholder="Descripcion" name= "description" ></p>
+        <p><input type = "text" placeholder="precio" name= "price" ></p>
+        <p><input type = "text" placeholder="descuento" name= "discount" ></p>
+        
+        <p><input type="file" name="image"></p>
+        <br>
+        <p><button type= "submit">Guardar</button></p>
+    
+    </form>    
+
+<%- include("../partials/footer") %>
+</body>
+</html>
+
+
+
